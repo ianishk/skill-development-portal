@@ -1,0 +1,135 @@
+/* #063C5E */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    position: relative;
+}
+
+/* -------------------button section--------------------- */
+
+.standardBtn{
+    width: 8em;
+    font-size: 1.25em;
+    color: white;
+    background-color: #063C5E;
+    border: 0px solid transparent;
+    border-radius: 50px;
+    height: 2.25em;
+}
+.standardBtn:hover{
+    background-color: #063c5ee7;
+}
+
+/* -------------------intro section--------------------- */
+
+.mainpage-intro{
+    height: 100vh;
+    padding: 0 0 0 50px;
+    display: flex;
+    align-items: center;
+}
+
+.mainpage-intro__left{
+    height: max-content;
+    width: 50%;
+}
+
+.mainpate-intro__right img{
+    width: 40vw;
+}
+
+.mainpage-intro__left h1{
+    font-size: 4em;
+}
+
+.mainpage-intro__left p{
+    margin-top: 2em;
+    font-size: 1.25em;
+    line-height: 30px;
+}
+
+.mainpage-intro__left__signin p{
+   display: inline-block;
+}
+
+.mainpage-intro__left__signin button{
+    margin-right: 2em;
+}
+
+.mainpage-intro__left__limits{
+    display: inline-block;
+    color: white;
+    padding: 5px 1em 5px 10px;
+    background-color: #063C5E;
+}
+
+/* -------------------about section--------------------- */
+
+.mainpage-about{
+    height: 80vh;
+    background-color: #063C5E;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.mainpage-about__right{
+    width: 50vw;
+}
+
+.mainpage-about__left{
+    width: 50vw;
+}
+
+.mainpage-about__left img{
+    width: 40vw;
+    height: auto;
+}
+
+.mainpage-about__right h1{
+    margin-bottom: 1em;
+}
+
+/* -------------------services section--------------------- */
+
+.mainpage-services{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.mainpage-services__left{
+    width: 50vw;
+    padding-left: 50px;
+}
+.mainpage-services__right{
+    width: 50vw;
+}
+
+.mainpage-services__right img{
+    width: 50vw;
+    height: auto;
+}
+
+.mainpage-services__left h1{
+    color: #063C5E;
+    margin-bottom: 1em;
+}
+
+
+.mainpage-testimonials{
+    background-color: #063C5E;
+    height: 80vh;
+    color: white;
+}
+.carousel-item img{
+    width: 20em; height: auto;
+}
+
+.footer {
+    height: 50vh;
+}

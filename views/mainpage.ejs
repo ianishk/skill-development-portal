@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <title>Skillup</title>
+    </head>
+
+    <body>
+       <%- include('partials/navbar') %>  
+       <div class="mainpage-intro">
+           <div class="mainpage-intro__left">
+               <h1>Learn</h1>
+               <h1>Without</h1>
+               <h1 class="mainpage-intro__left__limits">Limits.</h1>
+               <p>We strongly believe in early development of skills is 
+                fundamental to the growth of childern. So level up your skills by joining us for free</p>
+                <div class="mainpage-intro__left__signin">
+                    <button class="standardBtn">Sign up</button>
+                    <p>Already have an account? <a href="">Login here</a></p>
+                </div>
+           </div>
+           <div class="mainpate-intro__right">
+               <img src="icons/learning1.png" alt="">
+           </div>
+       </div>
+
+       <div class="mainpage-about">
+           <div class="mainpage-about__left">
+               <img src="/icons/learning2.png" alt="">
+           </div>
+           <div class="mainpage-about__right">
+               <h1>About Us</h1>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis risus ac augue dapibus, vulputate ornare neque iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin dictum nibh euismod, aliquet ex non, dapibus purus. Suspendisse egestas est ac rhoncus sagittis. Sed quis velit in mi faucibus pellentesque ut a ligula.</p>
+               <br>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis risus ac augue dapibus, vulputate ornare neque iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin dictum nibh euismod, aliquet ex non, dapibus purus. Suspendisse egestas est ac rhoncus sagittis. Sed quis velit in mi faucibus pellentesque ut a ligula.</p>
+           </div>
+       </div>
+
+       <div class="mainpage-services">
+           <div class="mainpage-services__left">
+            <h1>Our services</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis risus ac augue dapibus, vulputate ornare neque iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin dictum nibh euismod, aliquet ex non, dapibus purus. Suspendisse egestas est ac rhoncus sagittis. Sed quis velit in mi faucibus pellentesque ut a ligula.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis risus ac augue dapibus, vulputate ornare neque iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin dictum nibh euismod, aliquet ex non, dapibus purus. Suspendisse egestas est ac rhoncus sagittis. Sed quis velit in mi faucibus pellentesque ut a ligula.</p>
+           </div>
+           <div class="mainpage-services__right">
+               <img src="icons/learning3.jpg" alt="">
+           </div>
+       </div>
+
+       <div class="mainpage-testimonials" style="display: flex; align-items: center; justify-content: center;">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width: 80vw;">
+                <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div style="height: 60vh; text-align: center;">
+                        <img class="" src="/icons/learning1.png" alt="First slide">
+                        <div style="margin-top: 2em;">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis risus ac augue dapibus, vulputate ornare neque iaculis.</p>
+                            <p>-Anish, aged 12</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div style="height: 60vh; text-align: center;">
+                        <img class="" src="/icons/learning1.png" alt="Second slide">
+                        <div style="margin-top: 2em;">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis risus ac augue dapibus, vulputate ornare neque iaculis.</p>
+                            <p>-Anish, aged 12</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div style="height: 60vh; text-align: center;">
+                        <img class="" src="/icons/learning1.png" alt="Third slide">
+                        <div style="margin-top: 2em;">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis risus ac augue dapibus, vulputate ornare neque iaculis.</p>
+                            <p>-Anish, aged 12</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+                </a>
+            </div>
+       </div>
+
+       <%- include('partials/footer') %> 
+       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
