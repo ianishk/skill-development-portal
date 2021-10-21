@@ -9,7 +9,7 @@ This let children get involved in learning something new like dance, music, audi
 This website is designed for parents as well as teachers too, who can use this website. Parents in this website can learn new things like Parenting or audiobooks, videos and many more. Teachers can upload new content and engage with students. 
 
 Different features are being added to this website, like quizzes, notes which help children to learn and parents and teacher to assign work. We will be working on developing several learning facilities like interactive quiz, notes, and music therapy for their mental wellbeing.
-##Features of website
+## Features of website
 ### Student
 recommended videos
 
