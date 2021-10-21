@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    .courseDiv {
+        padding: 20x;
+        display: flex;
+    }
+
+    .courseBox {
+        width: 200px;
+        padding: 5px;
+        border: 1px solid rgb(180, 180, 180);
+        margin: 10px 20px;
+    }
+
+    .courseBox:hover {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-color: rgb(216, 216, 216);
+    }
+
+    .courseBox img {
+        height: 150px;
+        width: 200px;
+    }
+
+    .courseBox p {
+        margin: 5px 0;
+        font-size: 13px;
+    }
+
+    .courseBox h3 {
+        margin: 5px 0;
+        font-size: 15px;
+    }
+</style>
+<style>
+    .allCourse{
+        margin: 20px 0;
+        display: flex;
+    }
+</style>
+<body>
+    <%- include('partials/navbar') %> 
+    <div style="margin-top: 15vh;">
+        <h2 style="text-align: center ;">All courses</h2>
+        <!-- music -->
+        <h3 style="margin-top: 20px; margin-left: 20px;">Music courses</h3>
+        <div class="allCourse">
+            <% for( let i = 0; i < musicCourses.length; i++ ) { %>
+            <a href="/coursePage?id=<%= musicCourses[i]._id %>">
+                    <div class="courseDiv">
+                        <div class="courseBox">
+                            <img src="http://img.youtube.com/vi/<%= musicCourses[i].videoId %>/0.jpg" alt="">
+                            <h3><%= musicCourses[i].title %> </h3>
+                            <p>5000 students enrolled</p>
+                            <p>4.4 star rating</p>
+                            <p style="color: grey;">by <%= musicCourses[i].teacherName %></p>
+                        </div>
+                    </div>
+                </a>
+            <% } %>
+        </div>
+        <!-- art -->
+        <h3 style="margin-top: 20px; margin-left: 20px;">Art and Craft courses</h3>
+        <div class="allCourse">
+            <% for( let i = 0; i < artCourses.length; i++ ) { %>
+            <a href="/coursePage?id=<%= artCourses[i]._id %>">
+                    <div class="courseDiv">
+                        <div class="courseBox">
+                            <img src="http://img.youtube.com/vi/<%= artCourses[i].videoId %>/0.jpg" alt="">
+                            <h3><%= artCourses[i].title %> </h3>
+                            <p>5000 students enrolled</p>
+                            <p>4.4 star rating</p>
+                            <p style="color: grey;">by <%= artCourses[i].teacherName %></p>
+                        </div>
+                    </div>
+                </a>
+            <% } %>
+        </div>
+        <!-- dance -->
+        <h3 style="margin-top: 20px; margin-left: 20px;">Dance courses</h3>
+        <div class="allCourse">
+            <% for( let i = 0; i < danceCourses.length; i++ ) { %>
+            <a href="/coursePage?id=<%= danceCourses[i]._id %>">
+                    <div class="courseDiv">
+                        <div class="courseBox">
+                            <img src="http://img.youtube.com/vi/<%= danceCourses[i].videoId %>/0.jpg" alt="">
+                            <h3><%= danceCourses[i].title %> </h3>
+                            <p>5000 students enrolled</p>
+                            <p>4.4 star rating</p>
+                            <p style="color: grey;">by <%= danceCourses[i].teacherName %></p>
+                        </div>
+                    </div>
+                </a>
+            <% } %>
+        </div>
+        <!-- science -->
+        <h3 style="margin-top: 20px; margin-left: 20px;">Science courses</h3>
+        <div class="allCourse">
+            <% for( let i = 0; i < scienceCourses.length; i++ ) { %>
+            <a href="/coursePage?id=<%= scienceCourses[i]._id %>">
+                    <div class="courseDiv">
+                        <div class="courseBox">
+                            <img src="http://img.youtube.com/vi/<%= scienceCourses[i].videoId %>/0.jpg" alt="">
+                            <h3><%= scienceCourses[i].title %> </h3>
+                            <p>5000 students enrolled</p>
+                            <p>4.4 star rating</p>
+                            <p style="color: grey;">by <%= scienceCourses[i].teacherName %></p>
+                        </div>
+                    </div>
+                </a>
+            <% } %>
+        </div>
+        <!-- maths -->
+        <h3 style="margin-top: 20px; margin-left: 20px;">Maths courses</h3>
+        <div class="allCourse">
+            <% for( let i = 0; i < mathCourses.length; i++ ) { %>
+            <a href="/coursePage?id=<%= mathCourses[i]._id %>">
+                    <div class="courseDiv">
+                        <div class="courseBox">
+                            <img src="http://img.youtube.com/vi/<%= mathCourses[i].videoId %>/0.jpg" alt="">
+                            <h3><%= mathCourses[i].title %> </h3>
+                            <p>5000 students enrolled</p>
+                            <p>4.4 star rating</p>
+                            <p style="color: grey;">by <%= mathCourses[i].teacherName %></p>
+                        </div>
+                    </div>
+                </a>
+            <% } %>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div style="display: flex; height: 90vh;">
+        <div style="width: 30%; border: 1px solid rgb(196, 196, 196);">
+            <div style="margin-left: 20px; margin-right: 20px;">
+                <h4 style="text-align: center; margin-bottom: 20px; margin-top: 40px;">Login to your teacher account
+                </h4>
+                <form method="post" action="/teacherLogin">
+                    <label for="">Email address</label>
+                    <input type="email" name="emailAddress" style="margin-bottom: 20px;" class="form-control"
+                        type="text">
+                    <label for="">Password</label>
+                    <input type="password" name="password" style="margin-bottom: 20px;" class="form-control"
+                        type="text">
+
+                    <div style="display: flex; align-items: center;">
+                        <button class="standardBtn" style="width: 120px;">Login</button>
+                        <p style="margin-left: 10px; margin-bottom: 0;">Don't have an account? <a href="/teacherSignup">
+                            Sign up</a></p>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div style="width: 70%;">
+            <div style="margin-left: 80px; margin-top: 20px;">
+                <h3>Enhance your <b style="color: #1170AB;">Skills</b>.</h3>
+                <h3>Fro a more <b style="color: #1170AB;">Competitive</b> you.</h3>
+
+            </div>
+            <img src="icons/mposter.jpeg" style="width: 80%; height: auto;" alt="">
+        </div>
+    </div>
+
+    <%- include('partials/footer') %>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
