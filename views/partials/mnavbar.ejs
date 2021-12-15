@@ -9,7 +9,7 @@
 
 <style>
   .modalUser{
-    width: 30%; height: 200px; text-align: center; border: 1px solid rgb(206, 206, 206); border-radius: 10px; margin: 0 10px;
+    width: 35%; height: 200px; text-align: center; border: 1px solid rgb(206, 206, 206); border-radius: 10px; margin: 0 10px;
   }
   .modalUser:hover{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -37,7 +37,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <div style="display: flex;">
+          <div style="display: flex; justify-content: space-evenly;">
             <div onclick="location.href='studentSignup'" class="modalUser" >
                 <img src="/icons/profile.png" alt="" style="width: 50%;">
                 <p>Student</p>
@@ -45,10 +45,6 @@
             <div onclick="location.href='teacherSignup'" class="modalUser" >
                 <img src="/icons/profile.png" alt="" style="width: 50%;">
                 <p>Teacher</p>
-            </div>
-            <div onclick="location.href='studentSignup'" class="modalUser" >
-                <img src="/icons/profile.png" alt="" style="width: 50%;">
-                <p>Parent</p>
             </div>
           </div>
         </div>

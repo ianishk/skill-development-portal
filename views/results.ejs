@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skillup</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="marks-body">
+    <div class="marks-div">
+        <h2>Congratulations!</h2>
+        <p>You have scored <%= mark %> marks</p>
+        <button href="/" onclick="nav()" class="standardBtnm">Back</button>
+    </div>
+    <script>
+        function nav(){
+            window.location.href = '/courses';
+        }
+    </script>
+</body>
+</html>

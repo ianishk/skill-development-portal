@@ -1,32 +1,81 @@
-<div style="width: fit-content;">
-    <h2 style="margin-bottom: 40px; text-align: center;">Add new Course</h2>
+
+<div style="width: fit-content">
+    <h2 style="margin-bottom: 40px; text-align: center">Add new Course</h2>
     <form action="/addCourse" method="post">
+      <table class="addCourseTable">
+        <tr>
+          <td>Enter the course title</td>
+          <td><input name="title" type="text" /></td>
+        </tr>
+        <tr>
+          <td>Enter the subject name</td>
+          <td><input type="text" name="subject" id="" /></td>
+        </tr>
+        <tr>
+          <td>Enter short description</td>
+          <td><input name="shortDesc" type="text" /></td>
+        </tr>
+        <tr>
+          <td>Enter long description</td>
+          <td><textarea name="longDesc" id="" cols="30" rows="10"></textarea></td>
+        </tr>
+        <tr>
+          <td>Enter the id of the video</td>
+          <td><input name="videoId" type="text" /></td>
+        </tr>
+      </table>
+      <div>
+        <h3 style="text-align: center; margin-top: 2rem; margin-bottom: 1rem;">Enter questions for quiz</h3><br>
+        
         <table class="addCourseTable">
             <tr>
-                <td>Enter the course title</td>
-                <td><input name="title" type="text"></td>
+                <td style="display: flex; align-items: top;">
+                    <label for="">Enter first question</label>
+                </td>
+                <td>
+                  <input type="text" name="q1" id="" placeholder="Enter the question"/><br><br>
+                  <input type="text" name="q1o1" placeholder="Enter 1st option" /><br><br>
+                  <input type="text" name="q1o2" placeholder="Enter 2nd option" /><br><br>
+                  <input type="text" name="q1o3" placeholder="Enter 3rd option" /><br><br>
+                  <input type="text" name="q1o4" placeholder="Enter 4th option" /><br><br>
+                  <input type="text" name="q1co" placeholder="Enter correct option" /><br><br>
+                </td>
             </tr>
             <tr>
-                <td>Enter the subject name</td>
-                <td><input type="text" name="subject" id=""></td>
+                <td style="display: flex; align-items: top;">
+                  <label for="">Enter Second question</label><br>
+                </td>
+                <td>
+                  <input type="text" name="q2" id="" placeholder="Enter the question"/><br><br>
+                  <input type="text" name="q2o1" placeholder="Enter 1st option" /><br><br>
+                  <input type="text" name="q2o2" placeholder="Enter 2nd option" /><br><br>
+                  <input type="text" name="q2o3" placeholder="Enter 3rd option" /><br><br>
+                  <input type="text" name="q2o4" placeholder="Enter 4th option" /><br><br>
+                  <input type="text" name="q2co" placeholder="Enter correct option" /><br><br>
+                </td>
             </tr>
             <tr>
-                <td>Enter short description</td>
-                <td><input name="shortDesc" type="text"></td>
+                <td style="display: flex; align-items: top;">
+                  <label for="">Enter Third question</label><br>
+                </td>
+                <td>
+                  <input type="text" name="q3" id="" placeholder="Enter the question"/><br><br>
+                  <input type="text" name="q3o1" placeholder="Enter 1st option" /><br><br>
+                  <input type="text" name="q3o2" placeholder="Enter 2nd option" /><br><br>
+                  <input type="text" name="q3o3" placeholder="Enter 3rd option" /><br><br>
+                  <input type="text" name="q3o4" placeholder="Enter 4th option" /><br><br>
+                  <input type="text" name="q3co" placeholder="Enter correct option" /><br><br>
+                </td>
             </tr>
-            <tr>
-                <td>Enter long description</td>
-                <td><textarea name="longDesc" id="" cols="30" rows="10"></textarea></td>
-            </tr>
-            <tr>
-                <td>Enter the id of the video</td>
-                <td><input name="videoId" type="text"></td>
-            </tr>
+          
         </table>
-        <div style="text-align: center; margin-top: 20px;">
-            <button type="submit" class="standardBtn" style="width: 100px;">Submit</button>
-        </div>
+  
+      </div>
+      <div style="text-align: center; margin-top: 20px">
+        <button type="submit" class="standardBtn" style="width: 100px">
+          Submit
+        </button>
+      </div>
     </form>
-    
-
-</div>
+  </div>
+  

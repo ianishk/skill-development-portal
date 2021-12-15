@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SKILL-UP</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body class="tmarks-body">
+    <!-- Table -->
+    <div class="tmarks-div">
+      <h2 style="text-align: center;">Course Details</h2>
+      <section id="Courses">
+        <p>Course name: <b><%= cname  %></b> </p>
+      </section>
+      <section id="Students enrolled">
+        <p>Students enrolled: <b><%= cnos %></b> </p>
+      </section>
+      <section id="AVERAGE MARKING">
+        <p>Average marks: <b><%= cavg %></b> </p>
+      </section>
+
+      <hr>
+  
+      <div>
+        <h3>MARKS LIST</h3>
+  
+      <table>
+        <tr>
+          <th>Students</th>
+          <th>Marks obtained</th>
+        </tr>
+        <% marksObj.forEach(element => { %>
+          <tr>
+              <td style="padding: 0.5rem;"><%= element.name %> </td>
+              <td style="padding: 0.5rem;"><%= element.mark %> </td>
+            </tr>
+        <% }) %> 
+        
+      
+      </table>
+      </div>
+      <div style="width: 45%; margin-top: 1.5rem;">
+        <button class="standardBtnm" onclick="back()">Back</button>
+      </div>
+    </div>
+    <script>
+      function back(){
+        window.location.href = '/teacherLogin?q=courses';
+      }
+    </script>
+  </body>
+</html>

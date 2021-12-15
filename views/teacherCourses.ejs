@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skillup</title>
+</head>
+<style>
+    .courseDiv {
+        padding: 20x;
+        margin: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 20%;
+    }
+
+    .courseBox {
+        width: 200px;
+        padding: 5px;
+        border: 1px solid rgb(180, 180, 180);
+        margin: 10px 20px;
+    }
+
+    .courseBox:hover {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-color: rgb(216, 216, 216);
+    }
+
+    .courseBox img {
+        height: 150px;
+        width: 200px;
+    }
+
+    .courseBox p {
+        margin: 5px 0;
+        font-size: 13px;
+    }
+
+    .courseBox h3 {
+        margin: 5px 0;
+        font-size: 15px;
+    }
+</style>
+<body>
+    <h2 style="text-align: center;">your courses</h2>
+    <div style="display: flex; flex-wrap: wrap; flex-basis: 20%;">
+        <% for( let i = 0; i < courses.length; i++ ) { %>
+        <a href="/marks?id=<%= courses[i]._id %> ">
+            <div class="courseDiv">
+                <div class="courseBox">
+                    <img src="http://img.youtube.com/vi/<%= courses[i].videoId %>/0.jpg" alt="">
+                    <h3><%= courses[i].title %> </h3>
+                    <p><%= courses[i].enrollNo %>  students enrolled</p>
+                    <p>4.4 star rating</p>
+                    <p style="color: grey;">by <%= courses[i].teacherName %></p>
+                </div>
+            </div>
+        </a>
+        <% } %>
+    </div>
+</body>
+</html>

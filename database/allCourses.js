@@ -9,7 +9,7 @@ const allCoursesSchema = new mongoose.Schema({
     videoId: String,
     shortDesc: String,
     longDesc: String,
-    assignment: Array,
+    quiz: Object,
     average: String,
     tags: Array,
     rating: String,

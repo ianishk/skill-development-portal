@@ -4,19 +4,24 @@
         <h3 style="margin-bottom: 5px;">Anish</h3>
         <p style="color: grey;">Teacher</p>
     </div>
-    <div style="margin-top: 50px;">
-        <div class="teacherMenu">
+    <div onclick="" style="margin-top: 50px;">
+        <div class=<%=query=="profile"? "teacherMenuSelected": "teacherMenu"%>>
             <p>Profile</p>
         </div>
-        <div class="teacherMenu">
-            <p>Your courses</p>
-        </div>
-        <div class="teacherMenuSelected">
-            <p>Add course</p>
-        </div>
-        <div class="teacherMenu">
+        <a href="/teacherLogin?q=courses">
+            <div class=<%=query=="courses"? "teacherMenuSelected": "teacherMenu"%>>
+                <p>Your courses</p>
+            </div>
+        </a>
+        <a href="/teacherLogin?q=addcourse">
+            <div onclick="addcourse" class=<%=query=="addcourse"? "teacherMenuSelected": "teacherMenu"%>>
+                <p>Add course</p>
+            </div>
+        </a>
+        <div class=<%=query=="performance"? "teacherMenuSelected": "teacherMenu"%>>
             <p>Students performance</p>
         </div>
     </div>
+    
 
 </div>
