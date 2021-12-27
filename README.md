@@ -1,5 +1,6 @@
 # skill-development-portal
 skill development portal for children in the age group of 5 to 12 years
+live url: https://skill-development-portal.herokuapp.com/
 
 ## INTRODUCTION
 
