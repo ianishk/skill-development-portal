@@ -11,7 +11,7 @@ This website is designed for parents as well as teachers too, who can use this w
 
 Different features are being added to this website, like quizzes, notes which help children to learn and parents and teacher to assign work. We will be working on developing several learning facilities like interactive quiz, notes, and music therapy for their mental wellbeing.
 
-In our project we have used express and Monogodb for back end.
+In our project we have used express and Monogodb for back end. We have used ejs as a templating language for html. Our website is feasible for children to operate.
 ## Features of website
 ### Student
 recommended videos
